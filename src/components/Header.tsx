@@ -13,20 +13,40 @@ const Header = () => {
           </div>
           
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="#home" className="text-foreground hover:text-primary transition-colors">
+            <a 
+              href="#home" 
+              className="text-foreground hover:text-primary transition-colors duration-300 relative group"
+            >
               Home
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#services" className="text-foreground hover:text-primary transition-colors">
+            <a 
+              href="#services" 
+              className="text-foreground hover:text-primary transition-colors duration-300 relative group"
+            >
               Services
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#materials" className="text-foreground hover:text-primary transition-colors">
+            <a 
+              href="#materials" 
+              className="text-foreground hover:text-primary transition-colors duration-300 relative group"
+            >
               Materials
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#pricing" className="text-foreground hover:text-primary transition-colors">
+            <a 
+              href="#pricing" 
+              className="text-foreground hover:text-primary transition-colors duration-300 relative group"
+            >
               Pricing
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#contact" className="text-foreground hover:text-primary transition-colors">
+            <a 
+              href="#contact" 
+              className="text-foreground hover:text-primary transition-colors duration-300 relative group"
+            >
               Contact
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </a>
           </nav>
 
