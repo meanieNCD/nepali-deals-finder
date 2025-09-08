@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Recycle, Truck, Banknote } from "lucide-react";
+import { AppointmentBooking } from "./AppointmentBooking";
 import heroImage from "@/assets/hero-image.jpg";
 
 const Hero = () => {
@@ -18,10 +19,12 @@ const Hero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" className="group">
-                Get Instant Quote
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <AppointmentBooking>
+                <Button variant="hero" size="lg" className="group">
+                  Get Instant Quote
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </AppointmentBooking>
               <Button variant="outline" size="lg">
                 Call Now: +977-9841234567
               </Button>

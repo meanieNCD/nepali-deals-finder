@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Mail } from "lucide-react";
+import { AppointmentBooking } from "./AppointmentBooking";
 
 const Header = () => {
   return (
@@ -34,9 +35,11 @@ const Header = () => {
               <Phone className="h-4 w-4" />
               <span>+977-9841234567</span>
             </div>
-            <Button variant="hero" size="sm">
-              Book Collection
-            </Button>
+            <AppointmentBooking>
+              <Button variant="hero" size="sm">
+                Book Collection
+              </Button>
+            </AppointmentBooking>
           </div>
         </div>
       </div>

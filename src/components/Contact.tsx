@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { AppointmentBooking } from "./AppointmentBooking";
 
 const Contact = () => {
   return (
@@ -30,9 +31,11 @@ const Contact = () => {
                 </div>
                 <Input placeholder="Your Location" />
                 <Textarea placeholder="Describe your scrap materials (type, quantity, condition)" rows={4} />
-                <Button variant="hero" size="lg" className="w-full">
-                  Request Quote
-                </Button>
+                <AppointmentBooking>
+                  <Button variant="hero" size="lg" className="w-full">
+                    Request Quote
+                  </Button>
+                </AppointmentBooking>
               </CardContent>
             </Card>
 
